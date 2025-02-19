@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
-    "target": "ES2022",
-    "lib": ["es2022"],
-    "module": "ESNext",
+    "target": "es2022",
+    "lib": ["es2022", "dom"],
+    "module": "Node16",
     "skipLibCheck": true,
-
+    "allowSyntheticDefaultImports": true,
     /* Bundler mode */
-    "moduleResolution": "bundler",
+    "moduleResolution": "node16",
+    "jsx": "preserve",
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
@@ -18,7 +19,8 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    "types": ["vite/client"]
   },
   "include": ["vite.config.ts"]
 }
