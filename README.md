@@ -34,7 +34,7 @@ Este é um desafio da Coodesh.
 
 1. Execute o projeto:
    ```bash
-   npm run serve
+   npm run dev
    ```
 
 ### Rodando os Testes
