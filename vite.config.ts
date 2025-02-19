@@ -3,6 +3,8 @@ import tailwindcss from '@tailwindcss/vite';
 import vue from '@vitejs/plugin-vue';
 import path from 'path';
 
+const __dirname = path.resolve();
+
 export default defineConfig({
   plugins: [vue(), tailwindcss()],
   test: {
